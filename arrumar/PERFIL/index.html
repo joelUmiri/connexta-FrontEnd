@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">CK</div>
+      <ul>
+        <li>Dashboard</li>
+        <li>Criar Projeto</li>
+        <li>Meus Projetos</li>
+        <li>Feed de Projetos</li>
+        <li>Investimentos Recebidos</li>
+        <li>Relatórios & Analytics</li>
+        <li class="active">Configurações</li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="content">
+      <h2>⚙️ Configurações</h2>
+
+      <div class="card">
+        <h3 class="titulo-perfil">Perfil do Usuário</h3>
+        <div class="user-info">
+          <div class="avatar"></div>
+          <div class="inputs">
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="Email">
+            <button class="btn-outline">Alterar senha</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="titulo-preferencias">Preferências</h3>
+        <div class="preferencias-content">
+          <div class="tema">
+            <label>Tema:</label>
+            <button class="tema-btn">🌙 Dark</button>
+            <button class="tema-btn">☀️ Light</button>
+          </div>
+          <div class="notificacoes">
+            <label><input type="checkbox"> Notificações por email</label>
+            <label><input type="checkbox"> Notificações no app</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Segurança</h3>
+        <div class="auth">
+          <label>Autenticação em duas etapas</label>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="sessoes">
+          <label>Sessões ativas</label>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn salvar">Salvar alterações</button>
+        <button class="btn cancelar">Cancelar</button>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

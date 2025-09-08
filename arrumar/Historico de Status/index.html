@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Histórico de Status</title>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header superior -->
+    <header class="top-bar">
+      <div class="logo">CK</div>
+      <nav class="nav">
+        <a href="#">Início</a>
+        <a href="#">Projetos</a>
+        <a href="#">Perfil</a>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <section class="section">
+        <h1 class="title">Histórico de Status</h1>
+        <p class="date">12/02/2025 • Lançamento do projeto</p>
+      </section>
+
+      <!-- Situação -->
+      <section class="section">
+        <div class="form-group">
+          <label for="status">Situação</label>
+          <select id="status">
+            <option>Selecionar</option>
+            <option>Em andamento</option>
+            <option>Concluído</option>
+            <option>Pausado</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Descrição + imagem -->
+      <section class="section flex">
+        <div class="descricao">
+          <h2>Descrição</h2>
+          <p>Projeto lançado para o público alvo jovem<br>
+             com foco em mídias sociais e influenciadores</p>
+          <span class="adicionado">
+            Adicionado por: <strong>Antony Nunes</strong> – Diretor Executivo
+          </span>
+        </div>
+        <div class="image-box">[imagem]</div>
+      </section>
+
+      <!-- Comentário -->
+      <section class="section">
+        <div class="form-group">
+          <label for="comentario">Comentário <span>(visível apenas para o investidor)</span></label>
+          <textarea id="comentario" placeholder="Escreva seu comentário..."></textarea>
+        </div>
+      </section>
+
+      <!-- Checkbox + botão -->
+      <section class="section actions">
+        <div class="check-line">
+          <input type="checkbox" id="check">
+          <label for="check">Marcar como revisado</label>
+        </div>
+        <button>Enviar comentário</button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

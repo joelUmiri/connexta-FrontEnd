@@ -1,0 +1,242 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Layout principal */
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #1f1f1f, #141414);
+  padding: 20px 15px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.6);
+}
+
+.sidebar .logo {
+  color: #ff0077;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 12px 18px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  color: #bbb;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background: #ff0077;
+  color: #fff;
+}
+
+/* Conteúdo */
+.content {
+  flex: 1;
+  padding: 40px;
+  background-color: #181818;
+  overflow-y: auto;
+}
+
+.content h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Cards */
+.card {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  margin-bottom: 25px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Título Perfil */
+.titulo-perfil {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.user-info {
+  margin-top: 10px; /* empurra avatar para baixo */
+  display: flex;
+  align-items: flex-start; /* alinha pelo topo */
+  gap: 20px;
+}
+
+/* Avatar */
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: #333;
+  border-radius: 50%;
+  border: 2px solid #555;
+}
+
+/* Inputs */
+.inputs input {
+  display: block;
+  margin-bottom: 12px;
+  padding: 10px;
+  width: 280px;
+  background: #2a2a2a;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.inputs input:focus {
+  outline: 2px solid #ff0077;
+}
+
+/* Botão Alterar senha */
+.btn-outline {
+  background: transparent;
+  border: 1px solid #ff0077;
+  color: #ff0077;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #ff0077;
+  color: #fff;
+}
+
+/* Preferências */
+.titulo-preferencias {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.preferencias-content {
+  margin-top: 10px;
+}
+
+.tema {
+  margin-bottom: 15px;
+}
+
+.tema-btn {
+  background: #2a2a2a;
+  margin: 0 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tema-btn:hover {
+  background: #ff0077;
+}
+
+.notificacoes label {
+  display: block;
+  margin: 8px 0;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  margin-left: 15px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #444;
+  border-radius: 26px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 20px; width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+  background: #ff0077;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Botões principais */
+.actions {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.salvar {
+  background: #ff0077;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.salvar:hover {
+  background: #ff3399;
+}
+
+.cancelar {
+  background: #333;
+  color: #fff;
+}
+
+.cancelar:hover {
+  background: #555;
+}

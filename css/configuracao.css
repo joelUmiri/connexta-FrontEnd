@@ -23,11 +23,7 @@
 }
 
 .sidebar .logo {
-  color: #ff0077;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
+margin-left: 15px;
 }
 
 .sidebar ul {

@@ -240,3 +240,8 @@
 .cancelar:hover {
   background: #555;
 }
+
+.menus {
+  text-decoration: none;
+  color: #ffffff;
+}

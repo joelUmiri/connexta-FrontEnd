@@ -1,11 +1,9 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fundo */
 body {
   background: linear-gradient(135deg, #0e0e11, #1a1a20);
   color: #fff;
@@ -16,31 +14,25 @@ body {
   height: 100vh;
 }
 
-/* Caixa principal */
 .container {
   background-color: #141419;
   padding: 35px;
   border-radius: 16px;
   width: 480px;
   box-shadow: 0 0 25px rgba(230, 0, 126, 0.15);
-  position: relative;
   animation: fadeIn 0.8s ease;
 }
 
-/* Título */
 h2 {
   margin-bottom: 25px;
   font-size: 22px;
   font-weight: 600;
   text-align: center;
-  color: #FF007F;
+  color: #ff007f;
   letter-spacing: 1px;
 }
 
-/* Grupos do formulário */
-.form-group {
-  margin-bottom: 18px;
-}
+
 
 label {
   display: block;
@@ -50,21 +42,20 @@ label {
   font-weight: 500;
 }
 
-/* Inputs */
-input, select, textarea {
+
+select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #2a2a32;
   border-radius: 8px;
   background-color: #1e1e24;
-  color: #fff;
+  color: #bab2b2;
   font-size: 14px;
   transition: all 0.3s ease;
 }
 
-input:focus, select:focus, textarea:focus {
-  border-color: #FF007F;
-  box-shadow: 0 0 8px rgba(230, 0, 126, 0.4);
+select:focus, textarea:focus {
+  border-color: #ff007f;
   outline: none;
 }
 
@@ -80,8 +71,8 @@ textarea {
   margin: 25px auto 0;
   padding: 12px;
   background-color: transparent;
-  border: 2px solid #FF007F;
-  color: #FF007F;
+  border: 2px solid #ff007f;
+  color: #ff007f;
   font-size: 15px;
   font-weight: bold;
   border-radius: 25px;
@@ -89,26 +80,6 @@ textarea {
   transition: all 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #FF007F;
-  color: #fff;
-  box-shadow: 0 0 12px rgba(230, 0, 126, 0.6);
-  transform: scale(1.05);
-}
-
-/* Logo */
-.logo {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 26px;
-  font-weight: bold;
-  color: #FF007F;
-  letter-spacing: 2px;
-  cursor: default;
-}
-
-/* Animação de entrada */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -118,4 +89,21 @@ textarea {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.check-line{
+  display: flex;
+  width:200px;
+}
+.check {
+  margin-left: 5px;
+}
+
+.status {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button {
+
 }

@@ -11,10 +11,16 @@ body {
     min-height: 100vh;
     background: #121212;
     color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     width: 60px;
     height: 100vh;
     background: #1f1f1f;
@@ -23,16 +29,16 @@ body {
 }
 
 .sidebar:hover {
-    width: 300px;
+    width: 200px;
     color: white;
 }
 
 .sidebar ul li:hover {
     background: #ff0077;
+    color: #fff;
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
-    color: #ffffff;
 }
 
 .sidebar ul li a {
@@ -45,14 +51,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     min-width: 60px;
     height: 60px;
-    color: #333;
+    color: #ff0077;
 }
 
 .sidebar ul li.logo {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .sidebar ul li.logo:hover {
@@ -61,17 +67,17 @@ body {
 
 
 .sidebar ul li.logo .icone {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .sidebar ul li.logo .titulo {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #ff0077;
 }
 
 .sidebar ul li.logo img {
-    width: 88px;
+    width: 80px;
     height: 40px;
     object-fit: cover;
 }
@@ -82,7 +88,7 @@ body {
     width: 100%;
     height: 60px;
     color: #333;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: .05rem;
 }
@@ -128,6 +134,7 @@ body {
   background: #222;
   padding: 20px;
   border-radius: 10px;
+  margin: 20px 20px -10px;
 }
 
 .card h2 {
@@ -149,10 +156,13 @@ body {
 
 .groupCard {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  width: 100vw;
+  grid-template-columns: repeat(3, 10fr);
+  gap: 15px;
+  width: calc(100vw - 60px);
   height: 100vh;
+  margin: 50px 15px;
+  padding-left: 60px;
+  box-sizing: border-box;
 }
 
 .barra {

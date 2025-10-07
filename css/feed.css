@@ -7,7 +7,7 @@
 }
 
 body {
-    display: flex;
+  position: relative;
     min-height: 100vh;
     background: #121212;
     color: white;
@@ -19,18 +19,26 @@ body {
   display: none;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .sidebar {
+    background-color: #ffffff;
     position: fixed;
+    
     width: 60px;
     height: 100vh;
     background: #1f1f1f;
     transition: .5s;
     overflow: hidden;
+
+    z-index: 2;
 }
 
 .sidebar:hover {
     width: 200px;
-    color: white;
 }
 
 .sidebar ul li:hover {
@@ -160,7 +168,7 @@ body {
   gap: 15px;
   width: calc(100vw - 60px);
   height: 100vh;
-  margin: 50px 15px;
+  margin: 0 15px;
   padding-left: 60px;
   box-sizing: border-box;
 }
@@ -211,151 +219,11 @@ body {
   color: #ffffff;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+.filtros {
+  background-color: white;
+  height: 50px;
+  position: relative;
+
+  z-index: 1;
 }
 
-.container {
-  display: flex;
-  height: 100vh;
-  background: #121212;
-  color: white;
-}
-
-.sidebar {
-  width: 240px;
-  background: linear-gradient(180deg, #1f1f1f, #141414);
-  padding: 20px 15px;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.6);
-}
-
-.sidebar .logo {
-  color: #ff0077;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar ul li {
-  padding: 12px 18px;
-  margin: 10px 0;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-  color: #bbb;
-}
-
-.sidebar ul li.active,
-.sidebar ul li:hover {
-  background: #ff0077;
-  color: #fff;
-}
-
-.main-content {
-  flex: 1;
-  padding: 30px;
-  background: #1c1c1c;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.header h1 {
-  font-size: 28px;
-}
-
-.header .filtros button {
-  padding: 10px 15px;
-  border: none;
-  background: #333;
-  color: #fff;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.projetos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-}
-
-.card {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.card h2 {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.card p {
-  font-size: 14px;
-  margin-bottom: 15px;
-  color: #ccc;
-}
-
-.status {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.barra {
-  height: 8px;
-  background: #444;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-.preenchido {
-  height: 100%;
-  background: #ff007f;
-}
-
-.acoes {
-  display: flex;
-  justify-content: space-between;
-}
-
-.acoes button {
-  flex: 1;
-  margin: 5px;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.detalhes {
-  background: #333;
-  color: #fff;
-}
-
-.investir {
-  background: #555;
-  color: #fff;
-}
-
-.investir:hover {
-  background: #ff007f;
-}
-
-.menus {
-  text-decoration: none;
-  color: #ffffff;
-} */

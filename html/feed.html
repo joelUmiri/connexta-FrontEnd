@@ -1,323 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feed de Projetos</title>
-  <link rel="stylesheet" href="../css/feed.css">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
-<body>
-  <div class="sidebar">
-    <ul>
-      <li class="logo">
-        <a href="#">
-          <span class="icone"><img src="../imgs/Logo - Connexta.png" alt=""></span>
-          <span class="titulo">Connexta</span>
-        </a>
-      </li>
-      <li>
-        <a href="feed.html" id="item 1">
-          <span class="icone"><ion-icon name="home-outline"></ion-icon></span>
-          <span class="titulo">Feed</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="icone"><ion-icon name="person-outline"></ion-icon></span>
-          <span class="titulo">Perfil</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="icone"><ion-icon name="chatbubble-outline"></ion-icon></span>
-          <span class="titulo">Cx. de entrada</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="icone"><ion-icon name="bar-chart-outline"></ion-icon></span>
-          <span class="titulo">Análise</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="icone"><ion-icon name="cart-outline"></ion-icon></span>
-          <span class="titulo">Ordens</span>
-        </a>
-      </li>
-      <li>
-        <a href="configuracao.html">
-          <span class="icone"><ion-icon name="settings-outline"></ion-icon></span>
-          <span class="titulo">Configurações</span>
-        </a>
-      </li>
-      <li class="Conta">
-        <a href="#">
-          <span class="icone">
-            <div class="imgCaixa"><img src="#" alt=""></div>
-          </span>
-          <span class="titulo">Joel Mamani</span>
-        </a>
-      </li>
-      <li>
-        <a href="../index.html">
-          <span class="icone"><ion-icon name="log-out-outline"></ion-icon></span>
-          <span class="titulo">Logout</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <section class="projetos">
-    <div class="groupCard">
-      
-      <div class="card">
-        <h2>Projeto Alpha</h2>
-        <p>Descrição resumida do projeto Alpha que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Saúde</span>
-          <span class="progresso">Em Captação 65%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:65%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed de Projetos</title>
+    <link rel="stylesheet" href="../css/feed.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="filtros">
+        <button></button>
       </div>
-      <div class="card">
-        <h2>Projeto Charlie</h2>
-        <p>Descrição resumida do projeto Charlie que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Tecno</span>
-          <span class="progresso">Em Andamento 45%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:45%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Beta</h2>
-        <p>Descrição resumida do projeto Beta que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Infraestrutura</span>
-          <span class="progresso">Concluído 100%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:100%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Delta</h2>
-        <p>Descrição resumida do projeto Delta que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Energia</span>
-          <span class="progresso">Em Captação 35%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:35%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Echo</h2>
-        <p>Descrição resumida do projeto Echo que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Saúde</span>
-          <span class="progresso">Em Captação 65%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:65%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Falcon</h2>
-        <p>Descrição resumida do projeto Falcon que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Saúde</span>
-          <span class="progresso">Em Captação 65%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:65%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Alpha</h2>
-        <p>Descrição resumida do projeto Alpha que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Saúde</span>
-          <span class="progresso">Em Captação 65%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:65%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Alpha</h2>
-        <p>Descrição resumida do projeto Alpha que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Saúde</span>
-          <span class="progresso">Em Captação 65%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:65%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Alpha</h2>
-        <p>Descrição resumida do projeto Alpha que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Saúde</span>
-          <span class="progresso">Em Captação 65%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:65%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Alpha</h2>
-        <p>Descrição resumida do projeto Alpha que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Saúde</span>
-          <span class="progresso">Em Captação 65%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:65%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Alpha</h2>
-        <p>Descrição resumida do projeto Alpha que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Saúde</span>
-          <span class="progresso">Em Captação 65%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:65%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Projeto Alpha</h2>
-        <p>Descrição resumida do projeto Alpha que destaca as principais...</p>
-        <div class="status">
-          <span class="categoria">Saúde</span>
-          <span class="progresso">Em Captação 65%</span>
-        </div>
-        <div class="barra">
-          <div class="preenchido" style="width:65%"></div>
-        </div>
-        <div class="acoes">
-          <button class="detalhes">Ver Detalhes</button>
-          <button class="investir">Investir</button>
-        </div>
+      <div class="sidebar">
+        <ul>
+          <li class="logo">
+            <a href="#">
+              <span class="icone"
+                ><img src="../imgs/Logo - Connexta.png" alt=""
+              /></span>
+              <span class="titulo">Connexta</span>
+            </a>
+          </li>
+          <li>
+            <a href="feed.html" id="item 1">
+              <span class="icone"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="titulo">Feed</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icone"
+                ><ion-icon name="person-outline"></ion-icon
+              ></span>
+              <span class="titulo">Perfil</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icone"
+                ><ion-icon name="chatbubble-outline"></ion-icon
+              ></span>
+              <span class="titulo">Cx. de entrada</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icone"
+                ><ion-icon name="bar-chart-outline"></ion-icon
+              ></span>
+              <span class="titulo">Análise</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icone"
+                ><ion-icon name="cart-outline"></ion-icon
+              ></span>
+              <span class="titulo">Ordens</span>
+            </a>
+          </li>
+          <li>
+            <a href="configuracao.html">
+              <span class="icone"
+                ><ion-icon name="settings-outline"></ion-icon
+              ></span>
+              <span class="titulo">Configurações</span>
+            </a>
+          </li>
+          <li class="Conta">
+            <a href="#">
+              <span class="icone">
+                <div class="imgCaixa"><img src="#" alt="" /></div>
+              </span>
+              <span class="titulo">Joel Mamani</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <span class="icone"
+                ><ion-icon name="log-out-outline"></ion-icon
+              ></span>
+              <span class="titulo">Logout</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
-  <!-- <div class="container">
 
-    <aside class="sidebar">
-      <div class="logo">CK</div>
-      <nav>
-        <ul>
-          <a href="dashboard.html">
-            <li>Dashboard</li>
-          </a>
-          <a class="menus" href="criacaoProjeto.html"><li>Criar Projeto</li></a>
-          <li>Meus Projetos</li>
-          <li class="active">Feed de Projetos</li>
-          <li>Investimentos Recebidos</li>
-          <li>Relatórios & Analytics</li>
-          <a class="menus" href="configuracao.html">
-            <li>Configurações</li>
-          </a>
-        </ul>
-      </nav>
-    </aside>
-
-    <main class="main-content">
-      <header class="header">
-        <h1>Feed de Projetos</h1>
-        <div class="filtros">
-          <button>🔍 Filtros</button>
-        </div>
-      </header>
-
-      <section class="projetos">
- 
+    <section class="projetos">
+      <div class="groupCard">
         <div class="card">
           <h2>Projeto Alpha</h2>
-          <p>Descrição resumida do projeto Alpha que destaca as principais...</p>
+          <p>
+            Descrição resumida do projeto Alpha que destaca as principais...
+          </p>
           <div class="status">
             <span class="categoria">Saúde</span>
             <span class="progresso">Em Captação 65%</span>
           </div>
           <div class="barra">
-            <div class="preenchido" style="width:65%"></div>
+            <div class="preenchido" style="width: 65%"></div>
           </div>
           <div class="acoes">
             <button class="detalhes">Ver Detalhes</button>
             <button class="investir">Investir</button>
           </div>
         </div>
-
         <div class="card">
           <h2>Projeto Charlie</h2>
-          <p>Descrição resumida do projeto Charlie que destaca as principais...</p>
+          <p>
+            Descrição resumida do projeto Charlie que destaca as principais...
+          </p>
           <div class="status">
             <span class="categoria">Tecno</span>
             <span class="progresso">Em Andamento 45%</span>
           </div>
           <div class="barra">
-            <div class="preenchido" style="width:45%"></div>
+            <div class="preenchido" style="width: 45%"></div>
           </div>
           <div class="acoes">
             <button class="detalhes">Ver Detalhes</button>
             <button class="investir">Investir</button>
           </div>
         </div>
-
         <div class="card">
           <h2>Projeto Beta</h2>
           <p>Descrição resumida do projeto Beta que destaca as principais...</p>
@@ -326,34 +141,167 @@
             <span class="progresso">Concluído 100%</span>
           </div>
           <div class="barra">
-            <div class="preenchido" style="width:100%"></div>
+            <div class="preenchido" style="width: 100%"></div>
           </div>
           <div class="acoes">
             <button class="detalhes">Ver Detalhes</button>
             <button class="investir">Investir</button>
           </div>
         </div>
-
         <div class="card">
           <h2>Projeto Delta</h2>
-          <p>Descrição resumida do projeto Delta que destaca as principais...</p>
+          <p>
+            Descrição resumida do projeto Delta que destaca as principais...
+          </p>
           <div class="status">
             <span class="categoria">Energia</span>
             <span class="progresso">Em Captação 35%</span>
           </div>
           <div class="barra">
-            <div class="preenchido" style="width:35%"></div>
+            <div class="preenchido" style="width: 35%"></div>
           </div>
           <div class="acoes">
             <button class="detalhes">Ver Detalhes</button>
             <button class="investir">Investir</button>
           </div>
         </div>
-      </section>
-    </main>
-  </div>
+        <div class="card">
+          <h2>Projeto Echo</h2>
+          <p>Descrição resumida do projeto Echo que destaca as principais...</p>
+          <div class="status">
+            <span class="categoria">Saúde</span>
+            <span class="progresso">Em Captação 65%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido" style="width: 65%"></div>
+          </div>
+          <div class="acoes">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="investir">Investir</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Projeto Falcon</h2>
+          <p>
+            Descrição resumida do projeto Falcon que destaca as principais...
+          </p>
+          <div class="status">
+            <span class="categoria">Saúde</span>
+            <span class="progresso">Em Captação 65%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido" style="width: 65%"></div>
+          </div>
+          <div class="acoes">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="investir">Investir</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Projeto Alpha</h2>
+          <p>
+            Descrição resumida do projeto Alpha que destaca as principais...
+          </p>
+          <div class="status">
+            <span class="categoria">Saúde</span>
+            <span class="progresso">Em Captação 65%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido" style="width: 65%"></div>
+          </div>
+          <div class="acoes">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="investir">Investir</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Projeto Alpha</h2>
+          <p>
+            Descrição resumida do projeto Alpha que destaca as principais...
+          </p>
+          <div class="status">
+            <span class="categoria">Saúde</span>
+            <span class="progresso">Em Captação 65%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido" style="width: 65%"></div>
+          </div>
+          <div class="acoes">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="investir">Investir</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Projeto Alpha</h2>
+          <p>
+            Descrição resumida do projeto Alpha que destaca as principais...
+          </p>
+          <div class="status">
+            <span class="categoria">Saúde</span>
+            <span class="progresso">Em Captação 65%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido" style="width: 65%"></div>
+          </div>
+          <div class="acoes">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="investir">Investir</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Projeto Alpha</h2>
+          <p>
+            Descrição resumida do projeto Alpha que destaca as principais...
+          </p>
+          <div class="status">
+            <span class="categoria">Saúde</span>
+            <span class="progresso">Em Captação 65%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido" style="width: 65%"></div>
+          </div>
+          <div class="acoes">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="investir">Investir</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Projeto Alpha</h2>
+          <p>
+            Descrição resumida do projeto Alpha que destaca as principais...
+          </p>
+          <div class="status">
+            <span class="categoria">Saúde</span>
+            <span class="progresso">Em Captação 65%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido" style="width: 65%"></div>
+          </div>
+          <div class="acoes">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="investir">Investir</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Projeto Alpha</h2>
+          <p>
+            Descrição resumida do projeto Alpha que destaca as principais...
+          </p>
+          <div class="status">
+            <span class="categoria">Saúde</span>
+            <span class="progresso">Em Captação 65%</span>
+          </div>
+          <div class="barra">
+            <div class="preenchido" style="width: 65%"></div>
+          </div>
+          <div class="acoes">
+            <button class="detalhes">Ver Detalhes</button>
+            <button class="investir">Investir</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script> -->
-  <script src="../js/feed.js"></script>
-</body>
+    <script src="../js/feed.js"></script>
+  </body>
 </html>

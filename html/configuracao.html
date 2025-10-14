@@ -5,25 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Configurações</title>
   <link rel="stylesheet" href="../css/configuracao.css">
+  <link rel="stylesheet" href="../css/global.css">
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 </head>
 <body>
   <div class="container">
     
     <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="logo"><img src="../imgs/Logo - Connexta.png" alt=""></div>
-      <ul>
-        <li>Dashboard</li>
-        <li>Criar Projeto</li>
-        <li>Meus Projetos</li>
-        <a class="menus" href="feed.html">
-          <li>Feed de Projetos</li>
+    <div class="container">
+      <div class="sidebar">
+        <ul>
+          <li class="logo">
+            <a href="#">
+              <span class="icone"
+                ><img src="../imgs/Logo - Connexta.png" alt=""
+              /></span>
+              <span class="titulo">Connexta</span>
+            </a>
+          </li>
+          <li>
+        <a href="dashboard.html">
+          <span class="icone"><ion-icon name="bar-chart-outline"></ion-icon></span>
+          <span class="titulo">Dashboard</span>
         </a>
-        <li>Investimentos Recebidos</li>
-        <li>Relatórios & Analytics</li>
-        <li class="active">Configurações</li>
-      </ul>
-    </aside>
+      </li>
+      <li>
+        <a href="feed.html">
+          <span class="icone"><ion-icon name="home-outline"></ion-icon></span>
+          <span class="titulo">Feed</span>
+        </a>
+      </li>
+      <li>
+        <a href="criacaoProjeto.html">
+          <span class="icone"><ion-icon name="create-outline"></ion-icon></span>
+          <span class="titulo">Criar projeto</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icone"><ion-icon name="person-outline"></ion-icon></span>
+          <span class="titulo">Perfil</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icone"><ion-icon name="cart-outline"></ion-icon></span>
+          <span class="titulo">Ordens</span>
+        </a>
+      </li>
+      <li>
+        <a href="configuracao.html">
+          <span class="icone"><ion-icon name="settings-outline"></ion-icon></span>
+          <span class="titulo">Configurações</span>
+        </a>
+      </li>
+          <li class="Conta">
+            <a href="#">
+              <span class="icone">
+                <div class="imgCaixa"><img src="#" alt="" /></div>
+              </span>
+              <span class="titulo">Joel Mamani</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <span class="icone"
+                ><ion-icon name="log-out-outline"></ion-icon
+              ></span>
+              <span class="titulo">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Main content -->
     <main class="content">

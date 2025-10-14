@@ -1,56 +1,9 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-}
-
-/* Layout principal */
-.container {
-  display: flex;
-  height: 100vh;
-  background-color: #121212;
-  color: #eaeaea;
-}
-
-/* Sidebar */
-.sidebar {
-  width: 240px;
-  background: linear-gradient(180deg, #1f1f1f, #141414);
-  padding: 20px 15px;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.6);
-}
-
-.sidebar .logo {
-margin-left: 15px;
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar ul li {
-  padding: 12px 18px;
-  margin: 10px 0;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-  color: #bbb;
-}
-
-.sidebar ul li.active,
-.sidebar ul li:hover {
-  background: #ff0077;
-  color: #fff;
-}
-
 /* Conteúdo */
 .content {
   flex: 1;
   padding: 40px;
-  background-color: #181818;
   overflow-y: auto;
+  margin: 20px 60px 0;
 }
 
 .content h2 {

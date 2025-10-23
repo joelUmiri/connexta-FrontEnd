@@ -220,10 +220,16 @@ body {
 }
 
 .filtros {
-  background-color: white;
+
   height: 50px;
   position: relative;
 
   z-index: 1;
 }
 
+/* .search-itens {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 50px;
+} */

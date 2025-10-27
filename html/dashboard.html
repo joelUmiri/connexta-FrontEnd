@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/global.css ">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -61,14 +62,6 @@
           <span class="titulo">Configurações</span>
         </a>
       </li>
-      <li class="Conta">
-        <a href="#">
-          <span class="icone">
-            <div class="imgCaixa"><img src="#" alt=""></div>
-          </span>
-          <span class="titulo">Joel Mamani</span>
-        </a>
-      </li>
       <li>
         <a href="../index.html">
           <span class="icone"><ion-icon name="log-out-outline"></ion-icon></span>
@@ -76,6 +69,111 @@
         </a>
       </li>
     </ul>
+  </div>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1 class="title">Dashboard</h1>
+        <p class="subtitle">Painel geral dos seus projetos</p>
+      </div>
+      <div class="user">Antony Nunes ▾</div>
+    </header>
+
+
+    <section class="metrics">
+      <article class="card">
+        <p class="muted">Total de projetos ativos</p>
+        <h2 class="big">4</h2>
+      </article>
+
+
+      <article class="card">
+        <p class="muted">Total captado</p>
+        <h2 class="big">R$500.000</h2>
+        <p class="muted small">Projetos em captação: <span class="strong">2</span></p>
+      </article>
+
+
+      <article class="card">
+        <p class="muted">Novos investidores</p>
+        <h2 class="big">5</h2>
+      </article>
+    </section>
+
+
+    <section class="content">
+      <div class="projects">
+        <div class="project">
+          <div>
+            <p class="project-title">Projeto Alpha</p>
+            <p class="muted">[Descrição resumida]</p>
+          </div>
+          <div class="project-meta">
+            <span class="muted">22 maio</span>
+            <span class="muted">30r</span>
+            <span class="pill success">Em captação</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <div>
+            <p class="project-title">Projeto Beta</p>
+            <p class="muted">[Descrição resumida]</p>
+          </div>
+          <div class="project-meta">
+            <span class="muted">12 maio</span>
+            <span class="muted">30r</span>
+            <span class="pill warn">Em captação</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <div>
+            <p class="project-title">Projeto Gamma</p>
+            <p class="muted">[Descrição resumida]</p>
+          </div>
+          <div class="project-meta">
+            <span class="muted">18 maio</span>
+            <span class="muted">19r</span>
+            <span class="pill success">Em captação</span>
+          </div>
+        </div>
+
+        <button class="btn-primary">Criar Novo Projeto</button>
+      </div>
+      
+      <div class="activities-chart-row">
+        <div class="atv-recentes">
+          <h2 class="panel-title">Atividades Recentes</h2>
+          <ul class="activities">
+            <li><span class="dot"></span> Novo status adicionado ao Projeto Alpha <span class="muted small">há 3h</span>
+            </li>
+            <li><span class="dot"></span> Nova oferta de investimento em Projeto Beta <span class="muted small">há 3h</span>
+            </li>
+            <li><span class="dot"></span> Projeto Gamma foi criado <span class="muted small">há 1d</span></li>
+          </ul>
+        </div>
+        <!-- <div class="chart">
+          <p class="chart-title">Captação de Recursos</p>
+          <div class="bars">
+            <div class="bar" style="height: 30%"></div>
+            <div class="bar" style="height: 60%"></div>
+            <div class="bar" style="height: 80%"></div>
+            <div class="bar" style="height: 100%"></div>
+            <div class="bar" style="height: 50%"></div>
+            <div class="bar" style="height: 70%"></div>
+          </div>
+          <div class="chart-labels">
+            <span>março</span>
+            <span>abril</span>
+            <span>maio</span>
+            <span>junho</span>
+            <span>julho</span>
+            <span>agosto</span>
+          </div>
+        </div> -->
+      </div>
+    </section>
   </div>
 </body>
 

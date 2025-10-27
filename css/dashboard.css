@@ -1,0 +1,295 @@
+:root {
+    /* Variáveis globais */
+    --bg: #1a1a1a;
+    --panel: #262626;
+    --card: #262626;
+    --muted: #8b8b8b;
+    --accent: #ff007f;
+}
+
+body {
+    margin: 0;
+    font-family: popins, Arial;
+    background: var(--bg);
+    color: #e5e7eb
+}
+
+.container {
+    max-width: 100%;
+    padding: 32px;
+    margin-left: 75px;
+    box-sizing: border-box;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 1350px;
+    justify-content: space-between;
+    margin-bottom: 45px; /* Espaço maior abaixo do título */
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 28px;
+    margin: 0
+}
+
+.subtitle {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 13px
+}
+
+.user {
+    color: #cbd5e1
+}
+
+
+.metrics {
+    width: 1350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 0;
+}
+
+.card {
+    background: var(--panel);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card:hover {
+    background: #3a3a3a
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.big {
+    font-size: 22px;
+    margin: 8px 0 0
+}
+
+.small {
+    font-size: 12px
+}
+
+.strong {
+    color: #fff;
+    font-weight: 600
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 0.5fr 0.9fr;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project {
+    background: var(--card);
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 445px;
+    height: 110px; /* altura aumentada */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.project-title {
+    font-weight: 600;
+    margin: 0
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.project-meta .muted {
+    flex: 1;
+    text-align: center; /* centraliza a data */
+}
+
+.project-meta .pill {
+    margin-left: auto; /* empurra o "Em captação" para a direita */
+}
+
+.project:hover {
+    background: #3a3a3a
+}
+
+.pill {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12px
+}
+
+.pill.success {
+    background: #065f46;
+    color: #bbf7d0
+}
+
+.pill.warn {
+    background: #ff007f90;
+    color: #fbcfe8
+}
+
+
+.center {
+    text-align: center;
+    margin-top: 8px
+}
+
+.btn-primary {
+    background: var(--accent);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    width: 180px;
+    font-size: 15px;
+    margin-top: 35px; /* Adiciona espaço extra acima do botão */
+}
+
+
+.panel {
+    background: transparent
+}
+
+.panel-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.activities-chart-row {
+    width: 100%;
+    display: flex;
+    justify-content: end; /* alinha à direita */
+    margin-top: 0; /* espaço acima */
+}
+
+.atv-recentes{
+    height: 350px;
+    background-color: #262626;
+    border-radius: 8px;
+    padding: 16px;
+    margin-right: 120px;
+}
+
+.activities {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.activities .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ff1fa6;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+
+
+/* Responsividade geral */
+@media (max-width: 900px) {
+    .container {
+        margin-left: 70px;
+        max-width: 100%;
+        padding: 8px;
+    }
+    .header {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .metrics {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .content {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .chart {
+        max-width: 100%;
+    }
+    .project {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-left: 0;
+        padding: 4px;
+        max-width: 100vw;
+    }
+    .header {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .metrics {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    .content {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    .project {
+        padding: 6px;
+        font-size: 13px;
+    }
+    .btn-primary {
+        width: 100%;
+        font-size: 13px;
+        padding: 8px 0;
+    }
+    .chart {
+        padding: 6px;
+        margin-top: 16px;
+        max-width: 100%;
+    }
+    .bars {
+        gap: 10px;
+        height: 60px;
+    }
+    .bar {
+        width: 8px;
+    }
+    .chart-labels {
+        font-size: 8px;
+    }
+}

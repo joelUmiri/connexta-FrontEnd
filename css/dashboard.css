@@ -49,7 +49,7 @@ body {
 
 
 .metrics {
-    width: 1350px;
+    width: 1735px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -88,7 +88,6 @@ body {
 
 .content {
     display: grid;
-    grid-template-columns: 0.5fr 0.9fr;
     gap: 12px;
     margin-top: 14px;
 }
@@ -106,7 +105,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 445px;
+    width: 575px;
     height: 110px; /* altura aumentada */
     flex-direction: column;
     align-items: flex-start;
@@ -171,7 +170,7 @@ body {
     cursor: pointer;
     width: 180px;
     font-size: 15px;
-    margin-top: 35px; /* Adiciona espaço extra acima do botão */
+    margin-top: 250px;
 }
 
 
@@ -218,8 +217,6 @@ body {
 }
 
 
-
-/* Responsividade geral */
 @media (max-width: 900px) {
     .container {
         margin-left: 70px;
